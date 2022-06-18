@@ -2,15 +2,16 @@
 a bmp decoder on micropython by killo
 
 about st7735 from 
-#driver for Sainsmart 1.8" TFT display ST7735
-#Translated by Guy Carver from the ST7735 sample code.
-#Modirfied for micropython-esp32 by boochow
+driver for Sainsmart 1.8" TFT display ST7735
+Translated by Guy Carver from the ST7735 sample code.
+Modirfied for micropython-esp32 by boochow
 
 about bmpdecoder:
 mod by myself
 so there could be some bugs
 
-#how to use?
+## how to use?
+```
 from machine import SPI,Pin
 import st7735
 import time,random
@@ -51,4 +52,4 @@ print(b1.w,b1.h)
 print('use memory',(m1-gc.mem_free())/1024/1024)
 print('free memory',(gc.mem_free())/1024/1024)
 print('60fps in',(time.ticks_ms()-t)/1000)
-
+```
